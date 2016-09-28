@@ -1,0 +1,51 @@
+server
+======
+npm start
+http://localhost:8080/webpack-dev-server/
+
+
+client
+======
+
+
+http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html#setting-up-a-socket-io-server
+
+
+
+
+mkdir voting-server
+cd voting-server
+npm init -y
+
+npm install --save-dev babel-core babel-cli babel-preset-es2015
+
+
+npm install --save-dev babel-preset-react babel-preset-es2015
+
+
+npm install --save-dev mocha chai
+
+npm install --save redux
+
+to run tests
+------------
+
+./node_modules/mocha/bin/mocha --compilers js:babel-core/register --recursive
+
+==============================================================================================================
+# install the cli and this preset
+npm install --save-dev babel-cli babel-preset-es2015
+
+# make a .babelrc (config file) with the preset
+echo '{ "presets": ["es2015"] }' > .babelrc
+
+# create a file to run on
+echo 'console.log([1, 2, 3].map(n => n + 1));' > index.js
+
+# run it
+./node_modules/.bin/babel-node index.js
+
+================================================================================================================
+To start
+========
+npm run start
